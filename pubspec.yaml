@@ -1,7 +1,7 @@
 name: inview_notifier_list
 description: A Flutter package that builds a listview and notifies when the widgets are on screen.
-version: 0.0.2
-author: Vamsi Krishna <rvamsi1993@gmail.com>
+version: 1.0.0
+# author: Vamsi Krishna <rvamsi1993@gmail.com>
 homepage: https://github.com/rvamsikrishna/inview_notifier_list
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  stream_transform: ^0.0.19
+  stream_transform: ^1.1.0
 
 dev_dependencies:
   flutter_driver:

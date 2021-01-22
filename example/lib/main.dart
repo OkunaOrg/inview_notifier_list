@@ -1,3 +1,4 @@
+import 'package:example/csv_example.dart';
 import 'package:flutter/material.dart';
 
 import 'my_list.dart';
@@ -27,6 +28,7 @@ class _HomePageState extends State<HomePage> {
     Tab(text: 'Example 1'),
     Tab(text: 'Example 2'),
     Tab(text: 'Autoplay Video'),
+    Tab(text: 'Custom Scroll View'),
   ];
 
   @override
@@ -45,6 +47,7 @@ class _HomePageState extends State<HomePage> {
         body: TabBarView(
           children: <Widget>[
             MyList(
+              key: ValueKey("list1"),
               initialInViewIds: ['0'],
               inViewArea: Container(
                 height: 1.0,
@@ -64,6 +67,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             VideoList(),
+            CSVExample(),
           ],
         ),
       ),
